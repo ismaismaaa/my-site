@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Мой сайт</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(120deg,#4facfe,#00f2fe);
+    color:white;
+}
+
+header{
+    text-align:center;
+    padding:40px;
+}
+
+.container{
+    width:80%;
+    margin:auto;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.text{
+    width:50%;
+}
+
+.images{
+    width:40%;
+}
+
+.images img{
+    width:100%;
+    border-radius:10px;
+    box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+.form-section{
+    margin-top:40px;
+    background:white;
+    color:black;
+    padding:30px;
+    border-radius:10px;
+    width:60%;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+input, textarea{
+    width:100%;
+    padding:10px;
+    margin-top:10px;
+    margin-bottom:20px;
+    border-radius:5px;
+    border:1px solid #ccc;
+}
+
+button{
+    background:#4facfe;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    font-size:16px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#2f80ed;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Добро пожаловать на мой сайт</h1>
+<p>Небольшой опрос для посетителей</p>
+</header>
+
+<div class="container">
+
+<div class="text">
+<h2>О сайте</h2>
+<p>Это простой сайт созданный на HTML и CSS.</p>
+<p>Он содержит изображения, форму и красивый дизайн.</p>
+
+<img src="photo1.jpg" width="300">
+</div>
+
+<div class="images">
+<img src="photo2.jpg">
+</div>
+
+</div>
+
+<div class="form-section">
+
+<h2>Ответьте на несколько вопросов</h2>
+
+<form action="https://formspree.io/f/mdawgvna" method="POST">
+
+<label>Как вас зовут?</label>
+<input type="text" name="name" required>
+
+<label>Как проходит ваш день?</label>
+<textarea name="day" required></textarea>
+
+<label>Насколько сильно вы ждете лето?</label>
+<input type="text" name="summer" required>
+
+<button type="submit">Отправить</button>
+
+</form>
+
+</div>
+
+</body>
+</html>
